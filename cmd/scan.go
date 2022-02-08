@@ -16,7 +16,7 @@ var scanCmd = &cobra.Command{
 	Short: "Scans object apiVersion skew in a Kubernetes Cluster",
 	Long: `This utility connects to your Kubernetes Cluster using your default kubeconfig file or any
 	kubeconfig file you specify, gets the apiVersion of all objects in a particular namespace  or all namespaces,
-	and compares these values with the apiVersions in the corresponding Kubernetes version you specify to scheck for skews
+	and compares these values with the apiVersions in the corresponding Kubernetes version you specify to scan for skews
 	before upgrading your cluster.`,
 	//Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
